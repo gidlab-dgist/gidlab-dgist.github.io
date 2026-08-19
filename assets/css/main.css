@@ -2674,6 +2674,7 @@ section,
 
 
 
+
 /*--------------------------------------------------------------
 # Publications (custom)
 --------------------------------------------------------------*/
@@ -2819,6 +2820,13 @@ section,
 @media (max-width: 576px) {
   .pub-card { padding: 24px; }
   .pub-badge { position: static; display: inline-block; margin-bottom: 10px; }
+  .pub-role-badges {
+    position: static !important;
+    top: auto !important;
+    right: auto !important;
+    justify-content: flex-start !important;
+    margin: 8px 0 14px !important;
+  }
   .pub-links { position: static; margin-top: 16px; }
 }
 
@@ -2997,4 +3005,8 @@ section,
 }
 
 
-
+.recruiting-card .cta-btn,
+.hero .cta-btn,
+#hero .cta-btn {
+  white-space: nowrap;
+}
