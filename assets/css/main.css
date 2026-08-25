@@ -3010,3 +3010,130 @@ section,
 #hero .cta-btn {
   white-space: nowrap;
 }
+
+
+
+/*--------------------------------------------------------------
+# Research Area Cards (custom)
+--------------------------------------------------------------*/
+
+.research-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  justify-content: center;
+  align-items: stretch;
+}
+.research-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 3px 16px rgba(0,0,0,0.06);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+}
+.research-card .research-media {
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.research-card .research-media figure {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  max-width: 600px;
+}
+.research-card .research-media img {
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+  display: block;
+  background: color-mix(in srgb, var(--default-color), transparent 95%);
+}
+.research-card .icon-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.research-card .icon-title i {
+  font-size: 30px;
+  line-height: 0;
+}
+.research-card h4 {
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0;
+  color: var(--heading-color);
+}
+
+.research-card .description {
+  font-size: 15px;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  margin: 0;
+  max-width: none;
+}
+
+@media (max-width: 768px) {
+  .research-row {
+    gap: 20px;
+  }
+  .research-card {
+    width: 100%;
+    max-width: 100%;
+  }
+  .research-card .research-media {
+    height: 220px;
+  }
+  .research-card .research-media figure {
+    max-width: 100%;
+    width: 100%;
+    justify-content: center;
+  }
+  .research-card .research-media img {
+    max-height: 100%;
+  }
+  .research-card .description {
+    max-width: 100%;
+  }
+}
+
+.btn-outline-accent {
+  color: var(--heading-color);
+  background: transparent;
+  border: 2.5px solid var(--heading-color);
+  font-family: var(--heading-font);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+.btn-outline-accent:hover {
+  background: var(--heading-color);
+  color: #ffffff;
+}
+
+
+.btn-teal {
+  color: #ffffff;
+  background: #0d9488;
+  font-family: var(--heading-font);
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+.btn-teal:hover {
+  background: #0b7c72;
+  color: #ffffff;
+}
